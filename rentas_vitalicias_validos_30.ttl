@@ -1,0 +1,316 @@
+@prefix ex: <http://example.com/rentas#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Recursos auxiliares
+ex:RentaVitalicia a ex:Modalidad .
+ex:RetiroProgramado a ex:Modalidad .
+ex:RentaVitaliciaEscalonada a ex:Modalidad .
+
+# Datos privados ficticios
+ex:Cliente1 a ex:Pensionado ;
+    ex:edad 65 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "12.0"^^xsd:decimal .
+
+ex:Cliente2 a ex:Pensionado ;
+    ex:edad 70 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "8.0"^^xsd:decimal .
+
+ex:Cliente3 a ex:Pensionado ;
+    ex:edad 60 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Invalidez" ;
+    ex:modalidad ex:RentaVitaliciaEscalonada ;
+    ex:pension "15.0"^^xsd:decimal .
+
+ex:Cliente4 a ex:Pensionado ;
+    ex:edad 68 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Sobrevivencia" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "7.2"^^xsd:decimal .
+
+ex:Cliente5 a ex:Pensionado ;
+    ex:edad 66 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "10.1"^^xsd:decimal .
+
+ex:Cliente6 a ex:Pensionado ;
+    ex:edad 72 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "9.3"^^xsd:decimal .
+
+ex:Cliente7 a ex:Pensionado ;
+    ex:edad 61 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Invalidez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "18.4"^^xsd:decimal .
+
+ex:Cliente8 a ex:Pensionado ;
+    ex:edad 69 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitaliciaEscalonada ;
+    ex:pension "8.7"^^xsd:decimal .
+
+ex:Cliente9 a ex:Pensionado ;
+    ex:edad 64 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "11.5"^^xsd:decimal .
+
+ex:Cliente10 a ex:Pensionado ;
+    ex:edad 73 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Sobrevivencia" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "6.8"^^xsd:decimal .
+
+ex:Cliente11 a ex:Pensionado ;
+    ex:edad 67 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "9.8"^^xsd:decimal .
+
+ex:Cliente12 a ex:Pensionado ;
+    ex:edad 62 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Invalidez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "14.2"^^xsd:decimal .
+
+ex:Cliente13 a ex:Pensionado ;
+    ex:edad 71 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitaliciaEscalonada ;
+    ex:pension "10.6"^^xsd:decimal .
+
+ex:Cliente14 a ex:Pensionado ;
+    ex:edad 65 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "9.9"^^xsd:decimal .
+
+ex:Cliente15 a ex:Pensionado ;
+    ex:edad 63 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Invalidez" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "13.1"^^xsd:decimal .
+
+ex:Cliente16 a ex:Pensionado ;
+    ex:edad 74 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Sobrevivencia" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "7.5"^^xsd:decimal .
+
+ex:Cliente17 a ex:Pensionado ;
+    ex:edad 66 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "12.7"^^xsd:decimal .
+
+ex:Cliente18 a ex:Pensionado ;
+    ex:edad 70 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitaliciaEscalonada ;
+    ex:pension "8.4"^^xsd:decimal .
+
+ex:Cliente19 a ex:Pensionado ;
+    ex:edad 59 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Invalidez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "16.9"^^xsd:decimal .
+
+ex:Cliente20 a ex:Pensionado ;
+    ex:edad 68 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "8.9"^^xsd:decimal .
+
+ex:Cliente21 a ex:Pensionado ;
+    ex:edad 64 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitaliciaEscalonada ;
+    ex:pension "10.2"^^xsd:decimal .
+
+ex:Cliente22 a ex:Pensionado ;
+    ex:edad 75 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Sobrevivencia" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "6.9"^^xsd:decimal .
+
+ex:Cliente23 a ex:Pensionado ;
+    ex:edad 67 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "9.4"^^xsd:decimal .
+
+ex:Cliente24 a ex:Pensionado ;
+    ex:edad 61 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Invalidez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "15.1"^^xsd:decimal .
+
+ex:Cliente25 a ex:Pensionado ;
+    ex:edad 69 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "11.8"^^xsd:decimal .
+
+ex:Cliente26 a ex:Pensionado ;
+    ex:edad 72 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitaliciaEscalonada ;
+    ex:pension "8.6"^^xsd:decimal .
+
+ex:Cliente27 a ex:Pensionado ;
+    ex:edad 62 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Invalidez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "17.3"^^xsd:decimal .
+
+ex:Cliente28 a ex:Pensionado ;
+    ex:edad 66 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RetiroProgramado ;
+    ex:pension "8.3"^^xsd:decimal .
+
+ex:Cliente29 a ex:Pensionado ;
+    ex:edad 65 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "12.1"^^xsd:decimal .
+
+ex:Cliente30 a ex:Pensionado ;
+    ex:edad 71 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Sobrevivencia" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "7.1"^^xsd:decimal .
+
+# Datos públicos transformados a RDF
+ex:MercadoChile a ex:Mercado ;
+    ex:pensionPromedio "9.5"^^xsd:decimal ;
+    ex:porcentajeRetiroProgramado "45.4"^^xsd:decimal ;
+    ex:porcentajeRentaVitaliciaEscalonada "40.7"^^xsd:decimal .
+
+# Relación entre datos privados y públicos
+ex:Cliente1 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente2 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente3 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente4 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente5 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente6 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente7 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente8 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente9 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente10 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente11 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente12 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente13 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente14 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente15 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente16 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente17 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente18 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente19 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente20 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente21 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente22 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente23 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente24 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente25 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente26 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente27 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente28 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+
+ex:Cliente29 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio true .
+
+ex:Cliente30 ex:comparadoCon ex:MercadoChile ;
+    ex:estaSobrePromedio false .
+

@@ -1,0 +1,32 @@
+@prefix ex: <http://example.com/rentas#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ejemplos inválidos para pruebas de validación
+ex:ClienteError1 a ex:Pensionado ;
+    ex:edad "sesenta y cinco" ;
+    ex:sexo "Mujer" ;
+    ex:modalidad ex:RetiroProgramado .
+
+ex:ClienteError2 a ex:Pensionado ;
+    ex:edad 67 ;
+    ex:sexo "Otro" ;
+    ex:tipoPension "Vejez" ;
+    ex:modalidad ex:ModalidadNoDefinida ;
+    ex:pension "10.5"^^xsd:decimal .
+
+ex:ClienteError3 a ex:Pensionado ;
+    ex:edad 64 ;
+    ex:sexo "Hombre" ;
+    ex:tipoPension "Jubilacion" ;
+    ex:modalidad ex:RentaVitalicia ;
+    ex:pension "once" .
+
+ex:ClienteError4 a ex:Pensionado ;
+    ex:edad 70 ;
+    ex:sexo "Mujer" ;
+    ex:tipoPension "Sobrevivencia" ;
+    ex:pension "7.0"^^xsd:decimal .
+
+ex:MercadoError a ex:Mercado ;
+    ex:pensionPromedio "promedio" ;
+    ex:porcentajeRetiroProgramado "45.4"^^xsd:decimal .
