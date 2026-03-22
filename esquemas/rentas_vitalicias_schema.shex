@@ -1,0 +1,20 @@
+PREFIX ex: <http://example.com/rentas#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<PensionadoShape> {
+  a [ex:Pensionado] ;
+  ex:edad xsd:integer ;
+  ex:sexo ["Hombre" "Mujer"] ;
+  ex:tipoPension ["Vejez" "Invalidez" "Sobrevivencia"] ;
+  ex:modalidad [ex:RentaVitalicia ex:RetiroProgramado ex:RentaVitaliciaEscalonada] ;
+  ex:pension xsd:decimal ;
+  ex:comparadoCon IRI ? ;
+  ex:estaSobrePromedio xsd:boolean ?
+}
+
+<MercadoShape> {
+  a [ex:Mercado] ;
+  ex:pensionPromedio xsd:decimal ;
+  ex:porcentajeRetiroProgramado xsd:decimal ;
+  ex:porcentajeRentaVitaliciaEscalonada xsd:decimal
+}

@@ -1,0 +1,59 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.com/rentas#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:PensionadoShape
+    a sh:NodeShape ;
+    sh:targetClass ex:Pensionado ;
+    sh:property [
+        sh:path ex:edad ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ex:sexo ;
+        sh:in ("Hombre" "Mujer") ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ex:tipoPension ;
+        sh:in ("Vejez" "Invalidez" "Sobrevivencia") ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ex:modalidad ;
+        sh:in (ex:RentaVitalicia ex:RetiroProgramado ex:RentaVitaliciaEscalonada) ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ex:pension ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
+
+ex:MercadoShape
+    a sh:NodeShape ;
+    sh:targetClass ex:Mercado ;
+    sh:property [
+        sh:path ex:pensionPromedio ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ex:porcentajeRetiroProgramado ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path ex:porcentajeRentaVitaliciaEscalonada ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
